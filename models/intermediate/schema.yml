@@ -1,0 +1,13 @@
+
+version: 2
+
+models:
+    - name: int_vendas__prep_produtos
+      description: "Preparação para a dimensão produtos"
+      columns:
+          - name: pk_produtos
+            description: "Chave primaria (primary key) da tabela intermediaria para a dimensão produtos"
+            tests:
+                - unique
+                - not_null
+
