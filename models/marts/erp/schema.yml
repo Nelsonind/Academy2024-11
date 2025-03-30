@@ -1,0 +1,13 @@
+
+version: 2
+
+models:
+    - name: dim_produtos
+      description: "Dimensão de produtos, será utilizada para a criação da tabela fato vendas da NorthWidn"
+      columns:
+          - name: pk_produtos
+            description: "Chave primaria (primary key) da tabela de dimensão de produtos"
+            tests:
+                - unique
+                - not_null
+

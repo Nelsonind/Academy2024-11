@@ -1,0 +1,29 @@
+
+version: 2
+
+models:
+    - name: stg_erp__categorias
+      description: "Buscando informações da tabela original de categorias de produtos da NorthWind"
+      columns:
+          - name: pk_categoria
+            description: "Chave primaria (primary key) da tabela de categorias"
+            tests:
+                - unique
+                - not_null
+    - name: stg_erp__produtos
+      description: "Buscando informações da tabela original sobre os produtos que NorthWind negocia"
+      columns:
+          - name: pk_produtos
+            description: "Chave primaria (primary key) da tabela de categorias"
+            tests:
+                - unique
+                - not_null
+    - name: stg_erp__fornecedores
+      description: "Buscando informações da tabela original de fornecedores de insumos da NorthWind"
+      columns:
+          - name: pk_fornecedores
+            description: "Chave primaria (primary key) da tabela de categorias"
+            tests:
+                - unique
+                - not_null
+
